@@ -8,6 +8,9 @@ import { BodyComponent } from './components/pages/body/body.component';
 import { SideBarComponent } from './components/pages/side-bar/side-bar.component';
 import { HeaderComponent } from './components/pages/header/header.component';
 import { CourseComponent } from './components/pages/course/course.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CategoryComponent } from './components/pages/category/category.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { CourseComponent } from './components/pages/course/course.component';
     BodyComponent,
     SideBarComponent,
     HeaderComponent,
-    CourseComponent
+    CourseComponent,
+    CategoryComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
